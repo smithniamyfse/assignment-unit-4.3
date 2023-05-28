@@ -14,6 +14,10 @@ function listItems(){
     }
 }
 
+function empty(){
+    basket.splice(0, basket.length);
+    }
+
 console.log(`Basket is ${basket}`);
 console.log('Adding Cheese (expect true)', addItem(' ' + 'Cheese'));
 console.log(`Basket is ${basket}`);
@@ -21,12 +25,16 @@ console.log('Adding Strawberries (expect true)', addItem(' ' + 'Strawberries'));
 console.log(`Basket is ${basket}`);
 console.log('Adding Mountain Dew Code Red (expect true)', addItem(' ' + 'Mountain Dew Code Red'));
 console.log(`Basket is ${basket}`);
-console.log('Adding Spinach (expect true)', addItem(' ' + 'Spinach'));
+console.log('Adding Broccoli (expect true)', addItem(' ' + 'Broccoli'));
 console.log(`Basket is ${basket}`);
 console.log('Adding Coffee (expect true)', addItem(' ' + 'Coffee'));
 console.log(`Basket is ${basket}`);
 
 listItems();
+
+empty();
+console.log(basket);
+console.log(`Basket is now empty ${basket}`);
 
 
 // DO NOT MODIFY
